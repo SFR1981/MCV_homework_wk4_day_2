@@ -1,6 +1,8 @@
 require('sinatra')
 require('sinatra/contrib/all')
+also_reload('/models/*')
 require_relative('./models/game.rb')
+
 
 get ('/') do
   erb(:home)
