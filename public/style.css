@@ -4,3 +4,36 @@ body {
 background-color: teal;
 
 }
+
+
+ul {
+
+list-style-type: none;
+
+
+}
+
+nav {
+text-align: center;
+background-color: #C3DFFE;
+}
+
+h1 {
+
+background-color: #C8FEDD;
+text-align: center;
+
+
+}
+
+
+p {
+
+
+background-color:#FC5FD7;
+font-family: arial;
+
+
+
+
+}

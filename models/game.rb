@@ -6,25 +6,28 @@ class Game
   end
 
   def rps
+    return "It is a draw!"if @player1 == @player2
     if @player1 == 'rock'
       case @player2
-      when 'rock' then return 'draw'
-      when 'scissors' then return 'rock wins'
-      when 'paper' then return 'paper wins'
+      when 'scissors' then return "player 1 wins with #{@player1}"
+      when 'paper' then return "player 2 wins with #{@player2}"
       end
     elsif @player1 == 'scissors'
       case @player2
-      when 'rock' then return 'rock wins'
-      when 'scissors' then return 'draw'
-      when 'paper' then return 'scissors wins'
+      when 'rock' then return "player 2 wins with #{@player2}"
+      when 'paper' then return "player 1 wins with #{@player1}"
       end
     elsif @player1 == 'paper'
       case @player2
-      when 'rock' then return 'paper wins'
-      when 'scissors' then return 'scissors wins'
-      when 'paper' then return 'draw'
+      when 'rock' then return "player 1 wins with #{@player1}"
+      when 'scissors' then return "player 2 wins with #{@player2}"
       end
+    else return "invalid input"
     end
+
+s
+
+
   end
 
 end
